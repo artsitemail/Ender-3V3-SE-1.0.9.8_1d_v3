@@ -1558,7 +1558,7 @@ extern uint8_t CZ_AFTER_HOMING;      // (mm) Height to move to after homing Z
   // The height can be set with M420 Z<height>
   #define ENABLE_LEVELING_FADE_HEIGHT
   #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
-    #define DEFAULT_LEVELING_FADE_HEIGHT 10.0 // (mm) Default fade height.
+    #define DEFAULT_LEVELING_FADE_HEIGHT 2.0 // (mm) Default fade height 10.00
   #endif
 
   // For Cartesian machines, instead of dividing moves on mesh boundaries,

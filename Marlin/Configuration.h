@@ -1564,7 +1564,7 @@ extern uint8_t CZ_AFTER_HOMING;      // (mm) Height to move to after homing Z
   // For Cartesian machines, instead of dividing moves on mesh boundaries,
   // split up moves into short segments like a Delta. This follows the
   // contours of the bed more closely than edge-to-edge straight moves.
-  #define SEGMENT_LEVELED_MOVES
+  //#define SEGMENT_LEVELED_MOVES
   #define LEVELED_SEGMENT_LENGTH 1.0 // (mm) Length of all segments (except the last one)
 
   /**
@@ -1602,7 +1602,7 @@ extern uint8_t CZ_AFTER_HOMING;      // (mm) Height to move to after homing Z
     // Experimental Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
     //
-    #define ABL_BILINEAR_SUBDIVISION
+    //#define ABL_BILINEAR_SUBDIVISION
     #if ENABLED(ABL_BILINEAR_SUBDIVISION)
       // Number of subdivisions between probe points
       #define BILINEAR_SUBDIVISIONS 4
@@ -1727,7 +1727,7 @@ extern uint8_t CZ_AFTER_HOMING;      // (mm) Height to move to after homing Z
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_MM_M { (80*60), (80*60), (50*60) }
+#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (12*60) }
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
